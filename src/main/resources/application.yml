@@ -1,0 +1,9 @@
+aws:
+  region: us-west-2
+  dynamodb:
+    endpoint: http://localhost:8000
+  credentials:
+    accessKey: dummy
+    secretKey: dummy
+server:
+  port: 8080
