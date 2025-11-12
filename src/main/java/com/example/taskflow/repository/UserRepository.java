@@ -37,7 +37,6 @@ public class UserRepository {
         item.put("userId", AttributeValue.builder().s(user.getUserId()).build());
         item.put("name", AttributeValue.builder().s(user.getName()).build());
         item.put("email", AttributeValue.builder().s(user.getEmail()).build());
-        item.put("createdAt", AttributeValue.builder().s(user.getCreatedAt().toString()).build());
 
         client.putItem(PutItemRequest.builder().tableName(TABLE).item(item).build());
     }

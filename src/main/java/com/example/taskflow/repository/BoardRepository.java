@@ -43,7 +43,6 @@ public class BoardRepository {
         item.put("members", AttributeValue.builder()
                 .ss(board.getMembers())
                 .build());
-        item.put("createdAt", AttributeValue.builder().s(board.getCreatedAt().toString()).build());
 
         client.putItem(PutItemRequest.builder().tableName(TABLE).item(item).build());
     }

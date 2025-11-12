@@ -41,8 +41,6 @@ public class TaskRepository {
         item.put("description", AttributeValue.builder().s(task.getDescription()).build());
         item.put("status", AttributeValue.builder().s(task.getStatus()).build());
         item.put("assigneeId", AttributeValue.builder().s(task.getAssigneeId()).build());
-        item.put("createdAt", AttributeValue.builder().s(task.getCreatedAt().toString()).build());
-        item.put("updatedAt", AttributeValue.builder().s(task.getUpdatedAt().toString()).build());
 
         client.putItem(PutItemRequest.builder().tableName(TABLE).item(item).build());
     }

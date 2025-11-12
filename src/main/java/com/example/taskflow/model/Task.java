@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,6 +14,4 @@ public class Task {
     private String description;
     private String status;
     private String assigneeId;
-    private Date createdAt;
-    private Date updatedAt;
 }

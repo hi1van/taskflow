@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.List;
 
 @Data
@@ -16,5 +15,4 @@ public class Board {
     private String description;
     private String ownerId;
     private List<String> members;
-    private Date createdAt;
 }
